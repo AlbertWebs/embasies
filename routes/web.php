@@ -16,7 +16,7 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('homes');
 
 Auth::routes();
 /*------------------------------------------
@@ -25,7 +25,7 @@ All Normal Users Routes List
 --------------------------------------------
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:user'])->group(function () {
-    Route::get('/home', [HomeController::class, 'home'])->name('homes');
+    Route::get('/home', [HomeController::class, 'home'])->name('home');
 });
 
 /*------------------------------------------

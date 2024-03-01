@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->string('type')->nullable(); //deposit or widthdrawal
+            $table->string('type')->nullable();    //deposit or widthdrawal
             $table->string('amount')->default('0');
             $table->string('user_id')->nullable();
+            $table->string('title')->nullable();
+            $table->text('narrative')->nullable();
             $table->timestamps();
         });
     }

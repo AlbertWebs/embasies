@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('balances', function (Blueprint $table) {
             $table->id();
-            $table->string('available')->nullable();
-            $table->string('pending')->nullable();
+            $table->string('available')->default('0');
+            $table->string('pending')->default('0');
             $table->string('user_id')->nullable();
             $table->timestamps();
         });

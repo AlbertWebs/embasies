@@ -69,7 +69,14 @@
                     <ul class="header-right">
                         <li>
                             <a class="header-user" href="#">
-                                <img width="35" src="{{asset('mobile/assets/img/user.png')}}" alt="img">
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Sign Out<i class="fa fa-power-off"></i>
+                                </a>
+
+                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                 @csrf
+                             </form>
                             </a>
                         </li>
                     </ul>
@@ -143,9 +150,9 @@
                                     <label class="label">Enter Amount</label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text" id="input1">$</span>
+                                            <span class="input-group-text" id="input1">kes</span>
                                         </div>
-                                        <input type="text" class="form-control form-control-lg" value="768">
+                                        <input type="text" class="form-control form-control-lg" value="7680">
                                     </div>
                                 </div>
 
@@ -166,7 +173,7 @@
         <div class="container">
             <div class="balance-area-bg balance-area-bg-home">
                 <div class="balance-title text-center">
-                    <h6>Welcome! <br> Dear Mr Albert Muhatia - Online Wallet</h6>
+                    <h6>Welcome Back! {{Auth::User()->name}}</h6>
                 </div>
                 <div class="ba-balance-inner text-center" style="background-image: url(assets/img/bg/2.png);">
                     <div class="row">
@@ -285,7 +292,7 @@
                     <div class="details">
                         <h5>Namecheap Inc.</h5>
                         <p>Domain Purchase</p>
-                        <h5 class="amount">-$130</h5>
+                        <h5 class="amount">-kes 1350</h5>
                     </div>
                 </li>
                 <li class="ba-single-transaction">
@@ -295,7 +302,7 @@
                     <div class="details">
                         <h5>Namecheap Inc.</h5>
                         <p>Domain Purchase</p>
-                        <h5 class="amount">-$130</h5>
+                        <h5 class="amount">-kes 1350</h5>
                     </div>
                 </li>
                 <li class="ba-single-transaction">
@@ -305,7 +312,7 @@
                     <div class="details">
                         <h5>Namecheap Inc.</h5>
                         <p>Domain Purchase</p>
-                        <h5 class="amount">-$130</h5>
+                        <h5 class="amount">-kes 1350</h5>
                     </div>
                 </li>
                 <li class="ba-single-transaction">
@@ -315,7 +322,7 @@
                     <div class="details">
                         <h5>Namecheap Inc.</h5>
                         <p>Domain Purchase</p>
-                        <h5 class="amount">-$130</h5>
+                        <h5 class="amount">-kes 1350</h5>
                     </div>
                 </li>
             </ul>
@@ -334,7 +341,7 @@
                 <p>Copyright © Econet 2024. All Rights Reserved. Powered By Econet Africa</p>
             </div>
         </div>
-        <div class="container">
+        {{-- <div class="container">
             <div class="footer-bottom text-center">
                 <ul>
                     <li>
@@ -369,7 +376,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> --}}
     </div>
 
     <!-- back to top area start -->

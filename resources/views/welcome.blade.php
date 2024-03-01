@@ -69,8 +69,8 @@
          <div class="header-area">
             <div class="lay-width clearfix">
                <div class="logo">
-                  <a href="index.html"><img class="hlogo" src="../www.econetafrica.com/images/logo1.png" alt="Econet Wireless Logo" title="Econet Wireless"/>
-                  <img class="scroll-logo" src="../www.econetafrica.com/images/logo.png" alt="Econet Wireless Logo" title="Econet Wireless"/></a>
+                  <a href="index.html"><img class="hlogo" src="{{asset('econetafrica.com/www.econetafrica.com/images/logo1.png')}}" alt="Econet Wireless Logo" title="Econet Wireless"/>
+                  <img class="scroll-logo" src="{{asset('econetafrica.com/www.econetafrica.com/images/logo.png')}}" alt="Econet Wireless Logo" title="Econet Wireless"/></a>
                </div>
                <div class=" nav-area">
                   <nav class="nav">
@@ -136,7 +136,7 @@
                   </video>
                </div>
             </div>
-            <div class="slide-next"><a href="#econet"><img alt="Go Down" title="Go Down" src="../www.econetafrica.com/images/slid-arrow.png" /></a></div>
+            <div class="slide-next"><a href="#econet"><img alt="Go Down" title="Go Down" src="{{asset('econetafrica.com/www.econetafrica.com/images/slid-arrow.png')}}" /></a></div>
          </div>
       </div>
       <div class="weare-area">
@@ -146,7 +146,7 @@
                <p>ECONET is a 30&nbsp;year-old entrepreneurial technology group, focused on digitally connecting customers across Sub Saharan Africa.</p>
                <p><a class="btn01" href="about-econet.html" title="LEARN MORE">LEARN MORE</a></p>
             </div>
-            <div class="weare-right"> <img alt="Who We Are" title="Who We Are" src="../www.econetafrica.com/img/block/27270f361df6e879b8e2ad0709bd47b1c22fd.png"  /></div>
+            <div class="weare-right"> <img alt="Who We Are" title="Who We Are" src="{{asset('econetafrica.com/www.econetafrica.com/img/block/27270f361df6e879b8e2ad0709bd47b1c22fd.png')}}"  /></div>
          </div>
          <a name="econet"></a>
       </div>
@@ -156,7 +156,7 @@
             <p class="ctxt">The Econet business model combines various technologies and platforms to offer unparalleled choice, value, access and convenience to customers across the different industries.</p>
             <div class="coporate3col">
                <div class="col_1">
-                  <img alt="" src="images/graph-icon.png" title="" />
+                  <img alt="" src="images/graph-icon.png')}}" title="" />
                   <p>Impacted consumers</p>
                   <h4>+</h4>
                   <h4 class="numscroller" data-delay="3" data-increment="5" data-max="100" data-min="0" data-slno="1">100</h4>
@@ -179,28 +179,28 @@
             <div class="coporate4col">
                <div class="col_01">
                   <p>Dividends paid out to shareholders since 2009</p>
-                  <p><img alt="" src="images/cicon1.png" title="" /></p>
+                  <p><img alt="" src="images/cicon1.png')}}" title="" /></p>
                   <h4>+$</h4>
                   <h4 class="numscroller" data-delay="3" data-increment="5" data-max="180" data-min="0" data-slno="1">180</h4>
                   <h4><span>(USD) million</span></h4>
                </div>
                <div class="col_01">
                   <p>Mobile Money Cumulative Transactions Processed</p>
-                  <p><img alt="" src="images/cicon2.png" title="" /></p>
+                  <p><img alt="" src="images/cicon2.png')}}" title="" /></p>
                   <h4>+$</h4>
                   <h4 class="numscroller" data-delay="3" data-increment="5" data-max="38" data-min="0" data-slno="1">38</h4>
                   <h4><span>(USD) billion</span></h4>
                </div>
                <div class="col_01">
                   <p>Direct and indirect jobs created</p>
-                  <p class="ptop20"><img alt="" src="images/cicon3.png" title="" /></p>
+                  <p class="ptop20"><img alt="" src="images/cicon3.png')}}" title="" /></p>
                   <h4>+</h4>
                   <h4 class="numscroller" data-delay="3" data-increment="5" data-max="100" data-min="0" data-slno="1">100</h4>
                   <h4><span>thousand</span></h4>
                </div>
                <div class="col_01 lastbd">
                   <p>Orphans and children impacted with scholarships</p>
-                  <p><img alt="" src="images/cicon4.png" title="" /></p>
+                  <p><img alt="" src="images/cicon4.png')}}" title="" /></p>
                   <h4>+</h4>
                   <h4 class="numscroller" data-delay="3" data-increment="5" data-max="250" data-min="0" data-slno="1">250</h4>
                   <h4><span>thousand</span></h4>
@@ -220,7 +220,7 @@
                </p>
             </div>
          </div>
-         <div class="rightsection"><img alt="Chairman Strive Masiyiwa" title="Chairman Strive Masiyiwa" src="../www.econetafrica.com/img/block/1365803874617bda41783b7a7265d4945043ddd028.jpg"/></div>
+         <div class="rightsection"><img alt="Chairman Strive Masiyiwa" title="Chairman Strive Masiyiwa" src="{{asset('econetafrica.com/www.econetafrica.com/img/block/1365803874617bda41783b7a7265d4945043ddd028.jpg')}}"/></div>
          <div class="clearfix"></div>
       </div>
       <!-- <div class="container-area1 investors-relations">
@@ -248,7 +248,7 @@
          <div class="container-area2 recentnews">
             <h2>Recent News</h2>
             <div class="recentnewsbox ">
-               <div class="imgarea"><a title="Global technology leader Epson has partnered with Liquid Intelligent Technologies in Kenya" href="https://www.econetafrica.com/news/global-technology-leader-epson-has-partnered-with-liquid-intelligent-technologies-in-kenya" > <img alt="Global technology leader Epson has partnered with Liquid Intelligent Technologies in Kenya" title="Global technology leader Epson has partnered with Liquid Intelligent Technologies in Kenya" src="../www.econetafrica.com/img/blog/804543514da45536a1fed60539a923d10c7eb5acd.jpg"/> </a></div>
+               <div class="imgarea"><a title="Global technology leader Epson has partnered with Liquid Intelligent Technologies in Kenya" href="https://www.econetafrica.com/news/global-technology-leader-epson-has-partnered-with-liquid-intelligent-technologies-in-kenya" > <img alt="Global technology leader Epson has partnered with Liquid Intelligent Technologies in Kenya" title="Global technology leader Epson has partnered with Liquid Intelligent Technologies in Kenya" src="{{asset('econetafrica.com/www.econetafrica.com/img/blog/804543514da45536a1fed60539a923d10c7eb5acd.jpg')}}"/> </a></div>
                <div class="newstxt">
                   <div class="date">01 Feb 2024</div>
                   <h3><a title="Global technology leader Epson has partnered with Liquid Intelligent Technologies in Kenya" href="https://www.econetafrica.com/news/global-technology-leader-epson-has-partnered-with-liquid-intelligent-technologies-in-kenya">Global technology leader Epson has partnered with Liquid Intelligent Technologies in Kenya</a></h3>
@@ -257,7 +257,7 @@
                </div>
             </div>
             <div class="recentnewsbox ">
-               <div class="imgarea"><a title="Econet Wireless Empowers Women-Owned Businesses" href="https://www.econetafrica.com/news/econet-wireless-empowers-women-owned-businesses" > <img alt="Econet Wireless Empowers Women-Owned Businesses" title="Econet Wireless Empowers Women-Owned Businesses" src="../www.econetafrica.com/img/blog/4175599057093c5fe924df8330e6d37ce440457b5.jpg"/> </a></div>
+               <div class="imgarea"><a title="Econet Wireless Empowers Women-Owned Businesses" href="https://www.econetafrica.com/news/econet-wireless-empowers-women-owned-businesses" > <img alt="Econet Wireless Empowers Women-Owned Businesses" title="Econet Wireless Empowers Women-Owned Businesses" src="{{asset('econetafrica.com/www.econetafrica.com/img/blog/4175599057093c5fe924df8330e6d37ce440457b5.jpg')}}"/> </a></div>
                <div class="newstxt">
                   <div class="date">26 Jan 2024</div>
                   <h3><a title="Econet Wireless Empowers Women-Owned Businesses" href="https://www.econetafrica.com/news/econet-wireless-empowers-women-owned-businesses">Econet Wireless Empowers Women-Owned Businesses</a></h3>
@@ -266,7 +266,7 @@
                </div>
             </div>
             <div class="recentnewsbox mright0">
-               <div class="imgarea"><a title="Liquid Intelligent Technologies achieves Cisco Gold Certification, elevating the delivery of network services for South African customers" href="https://www.econetafrica.com/news/liquid-intelligent-technologies-achieves-cisco-gold-certification-elevating-the-delivery-of-network-services-for-south-african-customers" > <img alt="Liquid Intelligent Technologies achieves Cisco Gold Certification, elevating the delivery of network services for South African customers" title="Liquid Intelligent Technologies achieves Cisco Gold Certification, elevating the delivery of network services for South African customers" src="../www.econetafrica.com/img/blog/73025754684a6b5399e7ff5be5bfb44593fe1282c.jpg"/> </a></div>
+               <div class="imgarea"><a title="Liquid Intelligent Technologies achieves Cisco Gold Certification, elevating the delivery of network services for South African customers" href="https://www.econetafrica.com/news/liquid-intelligent-technologies-achieves-cisco-gold-certification-elevating-the-delivery-of-network-services-for-south-african-customers" > <img alt="Liquid Intelligent Technologies achieves Cisco Gold Certification, elevating the delivery of network services for South African customers" title="Liquid Intelligent Technologies achieves Cisco Gold Certification, elevating the delivery of network services for South African customers" src="{{asset('econetafrica.com/www.econetafrica.com/img/blog/73025754684a6b5399e7ff5be5bfb44593fe1282c.jpg')}}"/> </a></div>
                <div class="newstxt">
                   <div class="date">18 Jan 2024</div>
                   <h3><a title="Liquid Intelligent Technologies achieves Cisco Gold Certification, elevating the delivery of network services for South African customers" href="https://www.econetafrica.com/news/liquid-intelligent-technologies-achieves-cisco-gold-certification-elevating-the-delivery-of-network-services-for-south-african-customers">Liquid Intelligent Technologies achieves Cisco Gold Certification, elevating the delivery of network services for South African customers</a></h3>
@@ -281,26 +281,26 @@
             <h2>Recent Press Releases</h2>
             <div class="rpress-releases ">
                <div class="container-area2">
-                  <div class="press-left"><a title="IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa" href="https://www.econetafrica.com/press-release/ifc-and-rmb-partner-with-liquid-intelligent-technologies-to-accelerate-digital-transformation-in-south-africa" > <img alt="IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa" title="IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa" src="../www.econetafrica.com/img/blog/2034371803628ddcdfcad19200ed635c1661a5c567.jpg"/> </a></div>
+                  <div class="press-left"><a title="IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa" href="https://www.econetafrica.com/press-release/ifc-and-rmb-partner-with-liquid-intelligent-technologies-to-accelerate-digital-transformation-in-south-africa" > <img alt="IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa" title="IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa" src="{{asset('econetafrica.com/www.econetafrica.com/img/blog/2034371803628ddcdfcad19200ed635c1661a5c567.jpg')}}"/> </a></div>
                   <div class="press-right">
                      <div class="date">15 Nov 2023</div>
                      <h3><a title="IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa" href="https://www.econetafrica.com/press-release/ifc-and-rmb-partner-with-liquid-intelligent-technologies-to-accelerate-digital-transformation-in-south-africa">IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa</a></h3>
                      <p></p>
                   </div>
-                  <div class="pressarrow"><a title="IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa" href="https://www.econetafrica.com/press-release/ifc-and-rmb-partner-with-liquid-intelligent-technologies-to-accelerate-digital-transformation-in-south-africa"><img src="images/round-arrow.png" onmouseover="this.src='images/round-arrow-h.png';" onmouseout="this.src='images/round-arrow.png';" /></a></div>
+                  <div class="pressarrow"><a title="IFC and RMB partner with Liquid Intelligent Technologies to accelerate digital transformation in South Africa" href="https://www.econetafrica.com/press-release/ifc-and-rmb-partner-with-liquid-intelligent-technologies-to-accelerate-digital-transformation-in-south-africa"><img src="images/round-arrow.png')}}" onmouseover="this.src='images/round-arrow-h.png';" onmouseout="this.src='images/round-arrow.png';" /></a></div>
                   <div class="clearfix"></div>
                </div>
                <div class="clearfix"></div>
             </div>
             <div class="rpress-releases bdbottom0">
                <div class="container-area2">
-                  <div class="press-left"><a title="Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million" href="https://www.econetafrica.com/press-release/africa-data-centres-dfc-sign-statement-reaffirming-ongoing-partnership-for-ghana-facility-investment-of-300-million" > <img alt="Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million" title="Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million" src="../www.econetafrica.com/img/blog/8098742751580e32734012cebc5b6674fa1138930.jpg"/> </a></div>
+                  <div class="press-left"><a title="Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million" href="https://www.econetafrica.com/press-release/africa-data-centres-dfc-sign-statement-reaffirming-ongoing-partnership-for-ghana-facility-investment-of-300-million" > <img alt="Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million" title="Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million" src="{{asset('econetafrica.com/www.econetafrica.com/img/blog/8098742751580e32734012cebc5b6674fa1138930.jpg')}}"/> </a></div>
                   <div class="press-right">
                      <div class="date">13 Oct 2023</div>
                      <h3><a title="Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million" href="https://www.econetafrica.com/press-release/africa-data-centres-dfc-sign-statement-reaffirming-ongoing-partnership-for-ghana-facility-investment-of-300-million">Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million</a></h3>
                      <p></p>
                   </div>
-                  <div class="pressarrow"><a title="Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million" href="https://www.econetafrica.com/press-release/africa-data-centres-dfc-sign-statement-reaffirming-ongoing-partnership-for-ghana-facility-investment-of-300-million"><img src="images/round-arrow.png" onmouseover="this.src='images/round-arrow-h.png';" onmouseout="this.src='images/round-arrow.png';" /></a></div>
+                  <div class="pressarrow"><a title="Africa Data Centres, DFC sign statement reaffirming ongoing partnership for Ghana facility investment of $300 million" href="https://www.econetafrica.com/press-release/africa-data-centres-dfc-sign-statement-reaffirming-ongoing-partnership-for-ghana-facility-investment-of-300-million"><img src="images/round-arrow.png')}}" onmouseover="this.src='images/round-arrow-h.png';" onmouseout="this.src='images/round-arrow.png';" /></a></div>
                   <div class="clearfix"></div>
                </div>
                <div class="clearfix"></div>
@@ -328,7 +328,7 @@
             </div>
          </div>
       </div>
-      <script src="../www.econetafrica.com/js/flaunt.js"></script>
+      <script src="{{asset('econetafrica.com/www.econetafrica.com/js/flaunt.js')}}"></script>
       <script>
          $(".nav-submenu").nav-submenu({ 'animationSpeed' : 'slow' });
       </script><script>
@@ -348,15 +348,15 @@
          }
          }
       </script>
-      <script src="../www.econetafrica.com/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+      <script src="{{asset('econetafrica.com/www.econetafrica.com/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
       <script type="text/javascript" charset="utf-8">
          $(document).ready(function(){
          $("area[rel^='prettyPhoto']").prettyPhoto();
          $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, deeplinking: false,  autoplay_slideshow: false});
          });
       </script>
-      <script src="../www.econetafrica.com/js/numscroller-1.0.js"></script>
-      <script src="../www.econetafrica.com/js/prism.js"></script>
+      <script src="{{asset('econetafrica.com/www.econetafrica.com/js/numscroller-1.0.js"></script>
+      <script src="{{asset('econetafrica.com/www.econetafrica.com/js/prism.js"></script>
       <script type="text/javascript">
          jQuery('ul.tabs').each(function(){
          var $active, $content, $links = jQuery(this).find('a');

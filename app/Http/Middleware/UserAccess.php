@@ -23,6 +23,6 @@ class UserAccess
         }
 
         // return response()->json(['You do not have permission to access for this page.']);
-        return response()->view('app');
+        return response()->view('app.index');
     }
 }

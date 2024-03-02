@@ -159,7 +159,7 @@
                 <div class="balance-title text-center">
                     <h6>Welcome Back! {{Auth::User()->name}}</h6>
                 </div>
-                <div class="ba-balance-inner text-center" style="background-image: url(assets/img/bg/2.png);">
+                <div class="ba-balance-inner text-center" style="background-image: url('{{asset('mobile/assets/img/bg/2.png')}}');">
                     <div class="row">
                         <div class="col-6 pr-0">
                             <div class="icon">

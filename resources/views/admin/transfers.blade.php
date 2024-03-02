@@ -50,9 +50,10 @@
                                             <thead>
                                                 <tr>
                                                     <th>No</th>
-                                                    <th>Title</th>
+                                                    <th>Beneficiary</th>
+                                                    <th>Amount</th>
                                                     <th>User</th>
-                                                    <th>Update</th>
+                                                    <th>Narrative</th>
                                                     <th>Delete</th>
 
                                                 </tr>
@@ -61,14 +62,15 @@
                                             @foreach($Update as $value)
                                                 <tr class="odd gradeX">
                                                     <td>{{$value->id}}</td>
-                                                    <td>{{$value->title}}</td>
+                                                    <td>{{$value->beneficiary}}</td>
+                                                    <td>{{$value->amount}}</td>
                                                     <td style="min-width:100px;">
                                                         <?php
                                                           $User = \App\Models\User::find($value->user_id);
                                                         ?>
                                                         {{$User->name}}
                                                     </td>
-                                                    <td>{{$value->content}}</td>
+                                                    <td>{{$value->narrative}}</td>
                                                     <td class="center"><a  href="{{url('/admin')}}/delateUpdate/{{$value->id}}"   class="btn btn-danger"><i class="icon-trash icon-white"></i> Delete</a></td>
                                                 </tr>
                                             @endforeach

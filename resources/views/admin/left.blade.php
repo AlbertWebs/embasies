@@ -30,11 +30,21 @@
                 </li>
 
 
-                <li><a href="{{url('admin/addSlider')}}"><i class="icon-plus"></i>  <i class="icon-film"></i> Add Update </a></li>
+                <li><a href="{{url('admin/addUpdate')}}"><i class="icon-plus"></i>  Add Update </a></li>
 
 
-                <li><a href="{{url('admin/sitesettings')}}"><i class="icon-cog"></i> Site Settings </a></li>
-                <li><a href="{{url('admin/logout')}}"><i class="icon-signin"></i> Log Out </a></li>
+                {{-- <li><a href="{{url('admin/sitesettings')}}"><i class="icon-cog"></i> Site Settings </a></li> --}}
+                <li>
+                    {{-- <a href="{{url('admin/logout')}}"><i class="icon-signin"></i> Log Out </a> --}}
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class="icon-signin"></i>  {{ __('Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </li>
 
 
             </ul>

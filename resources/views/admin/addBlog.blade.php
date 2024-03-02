@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,7 +18,7 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -36,12 +36,12 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                
-               
+
+
                   <!-- Inner Content Here -->
-                 
+
             <div class="inner">
-                
+
 
               <div class="row">
                <center>
@@ -53,10 +53,10 @@
 							   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
 				@endif
                  </center>
-                 
+
 
                  <form class="form-horizontal" method="post"  action="{{url('/admin/add_Blog')}}" enctype="multipart/form-data">
-                    
+
                  <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Title</label>
 
@@ -73,12 +73,12 @@
                         </div>
                     </div>
 
-                   
+
                      <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Category</label>
                     <div class="col-lg-8">
                         <select name="cat" data-placeholder="Choose a Category" class="form-control chzn-select" tabindex="2">
-                          
+
                            <?php $Category = DB::table('category')->get(); ?>
                            @foreach($Category as $value)
                               <option value="{{$value->id}}">{{$value->cat}}</option>
@@ -90,13 +90,13 @@
 
                         <div class="form-group">
                             <label for="limiter" class="control-label col-lg-4">Meta Data</label>
-    
+
                             <div class="col-lg-8">
                                 <textarea id="limiter" name="meta" class="form-control"></textarea>
                                 <p class="help-block">Brief Description of the post</p>
                             </div>
                         </div>
-          
+
                         <div class="col-lg-12">
                             <div class="box">
                                 <header>
@@ -118,14 +118,14 @@
                                     </ul>
                                 </header>
                                 <div id="div-1" class="body collapse in">
-                                    
+
                                         <textarea name="content" id="article-ckeditor" class="form-control" rows="10"></textarea>
 
-                                    
+
                                 </div>
                             </div>
                         </div>
-                   
+
                     <center>
                     <div class="form-group col-lg-12">
                     <div class="form-group col-lg-6">
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="form-group col-lg-6">
                         <label class="control-label">Image Two</label>
                         <div class="">
@@ -155,7 +155,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="form-group col-lg-6">
                         <label class="control-label">Image Three</label>
                         <div class="">
@@ -184,17 +184,17 @@
                         </div>
                     </div>
 
-                   
+
                     </div>
                     </center>
                     <br><br>
                     <div class="col-lg-12 text-center">
                       <button type="submit" class="btn btn-success"><i class="icon-plus icon-white"></i> Add Post</button>
                     </div>
-                    
-                    
+
+
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    
+
                 <form>
               </div>
 
@@ -203,7 +203,7 @@
 
 
 
-                
+
             </div>
 
         </div>

@@ -9,8 +9,8 @@
             <div class="well well-small">
 
                 <button type="button" onclick="window.open('{{url('/admin/users')}}','_self')" class="btn btn-primary btn-block"> Users</button>
-                <button type="button" onclick="window.open('{{url('/admin/blog')}}','_self')" class="btn btn-success btn-block"> Transfers</button>
-                <button type="button" onclick="window.open('{{url('/admin/banner')}}','_self')" class="btn btn-primary btn-block"> Updates</button>
+                <button type="button" onclick="window.open('{{url('/admin/transfers')}}','_self')" class="btn btn-success btn-block"> Transfers</button>
+                <button type="button" onclick="window.open('{{url('/admin/updates')}}','_self')" class="btn btn-primary btn-block"> Updates</button>
 
 
 

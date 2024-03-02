@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,25 +18,24 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h1> List Of Clients</h1>
+                    <div class="col-lg-12 text-center">
+                        <h2> List Of Users</h2>
                     </div>
                 </div>
                   <hr />
                  <!--BLOCK SECTION -->
-                 <div class="row">
+                 {{-- <div class="row">
                     <div class="col-lg-12">
                         @include('admin.panel')
 
                     </div>
 
-                </div>
+                </div> --}}
                   <!--END BLOCK SECTION -->
-                <hr />
-                 
+
                  <!-- COMMENT AND NOTIFICATION  SECTION -->
                    <div class="row">
                         <div class="col-lg-12">
@@ -52,7 +51,7 @@
                                                     <th>No</th>
                                                     <th>Name</th>
                                                     <th>Email</th>
-                                                    <th>Image</th>
+                                                    {{-- <th>Image</th> --}}
                                                     <th>Delete</th>
                                                 </tr>
                                             </thead>
@@ -62,7 +61,7 @@
                                                     <td>{{$value->id}}</td>
                                                     <td>{{$value->name}}</td>
                                                     <td>{{$value->email}}</td>
-                                                    <td><center><img width="200" height="200" src="{{url('/')}}/uploads/users/{{$value->image}}"></center></td>
+                                                    {{-- <td><center><img width="200" height="200" src="{{url('/')}}/uploads/users/{{$value->image}}"></center></td> --}}
                                                     @if($value->id == 1)
                                                     <td class="center"><a onclick="return alert('You Cannot Delete The SupperAdmin')" href=""   class="btn btn-danger"><i class="icon-trash icon-white"></i> Del</a></td>
                                                     @else
@@ -70,21 +69,21 @@
                                                     @endif
                                                 </tr>
                                             @endforeach
-                                                
+
                                             </tbody>
                                         </table>
                                     </div>
-                                
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 <!-- END COMMENT AND NOTIFICATION  SECTION -->
-                
 
 
 
-                
+
+
             </div>
 
         </div>

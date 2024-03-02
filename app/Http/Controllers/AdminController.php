@@ -26,9 +26,13 @@ use App\Privacy;
 
 use App\Gallery;
 
+use App\Models\Transfer;
+
+use App\Models\Update;
+
 use App\Admin;
 
-use App\User;
+use App\Models\User;
 
 use App\Page;
 
@@ -55,8 +59,6 @@ use App\Models\Portfolio;
 use App\Pricing;
 
 use App\Subscriber;
-
-use App\Update;
 
 use App\Payment;
 
@@ -2055,12 +2057,7 @@ public function deleteSubscriber($id){
     return Redirect::back();
 }
 
-public function updates(){
-    $Update = Update::all();
-    $page_title = 'list';
-    $page_name = 'Updates';
-    return view('admin.updates',compact('page_title','Update','page_name'));
-}
+
 
 public function update($id){
     $Update = Update::find($id);
@@ -2802,13 +2799,47 @@ public function edit_File(Request $request,$id){
 }
 
 
+// Add Update Method
+public function addUpdate(){
+    $page_title = 'formfiletext';
+    $page_name = 'Add File';
+    return view('admin.addUpdate',compact('page_title','page_name'));
+}
+
+// create post method for add_Update
+public function add_Update(Request $request){
+   $title = $request->title;
+   $content = $request->content;
+   $user_id = $request->user_id;
+
+   $updateDetails = array(
+        'title' => $title,
+        'content' => $content,
+        'user_id' => $user_id,
+    );
+    DB::table('updates')->insert($updateDetails);
+    Session::flash('message', "Update Has Been Added");
+    return Redirect::back();
+}
 
 
+public function updates(){
+    $Update = Update::all();
+    $page_title = 'list';
+    $page_name = 'Updates';
+    return view('admin.updates',compact('page_title','Update','page_name'));
+}
+
+public function transfers(){
+    $Update = Transfer::all();
+    $page_title = 'list';
+    $page_name = 'Updates';
+    return view('admin.transfers',compact('page_title','Update','page_name'));
+}
 
 
 
 }
-
 
 
 

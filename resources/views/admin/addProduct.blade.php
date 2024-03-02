@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,7 +18,7 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
@@ -36,12 +36,12 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                  
-               
+
+
                   <!-- Inner Content Here -->
-                 
+
             <div class="inner">
-                
+
 
               <div class="row">
                <center>
@@ -53,10 +53,10 @@
 							   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
 				@endif
                  </center>
-                 
+
 
                  <form class="form-horizontal" method="post"  action="{{url('/admin/add_Product')}}" enctype="multipart/form-data">
-                    
+
                  <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Product Name</label>
 
@@ -84,12 +84,12 @@
                     <div class="form-group">
                     <label class="control-label col-lg-4">Category</label>
 
-                    
-                        
+
+
 
                     <div class="col-lg-8">
                         <select name="cat" data-placeholder="Choose Category" class="form-control chzn-select" tabindex="2">
-                          
+
                            <?php $TheCategoryList = DB::table('category')->get(); ?>
                            @foreach($TheCategoryList as $value)
                               <option value="{{$value->id}}">{{$value->cat}}</option>
@@ -102,12 +102,12 @@
                     <div class="form-group">
                     <label class="control-label col-lg-4">Sub Category</label>
 
-                    
-                        
+
+
 
                     <div class="col-lg-8">
                         <select name="sub_cat" data-placeholder="Choose Sub Category" class="form-control chzn-select" tabindex="2">
-                          
+
                            <?php $TheSubCategoryList = DB::table('sub_category')->get(); ?>
                            @foreach($TheSubCategoryList as $value)
                               <option value="{{$value->id}}">{{$value->name}}</option>
@@ -116,7 +116,7 @@
                         </select>
                     </div>
                     </div>
-          
+
                         <div class="col-lg-12">
                             <div class="box">
                                 <header>
@@ -138,14 +138,14 @@
                                     </ul>
                                 </header>
                                 <div id="div-1" class="body collapse in">
-                                    
+
                                         <textarea name="content" id="wysihtml5" class="form-control" rows="10"></textarea>
 
-                                    
+
                                 </div>
                             </div>
                         </div>
-                   
+
                     <center>
                     <div class="form-group col-lg-12">
                     <div class="form-group col-lg-4">
@@ -161,7 +161,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="form-group col-lg-4">
                         <label class="control-label">Image Two</label>
                         <div class="">
@@ -175,7 +175,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="form-group col-lg-4">
                         <label class="control-label">Image Three</label>
                         <div class="">
@@ -190,19 +190,19 @@
                         </div>
                     </div>
 
-                   
 
-                    
+
+
                     </div>
                     </center>
                     <br><br>
                     <div class="col-lg-12 text-center">
                       <button type="submit" class="btn btn-success"><i class="icon-plus icon-white"></i> Add Product</button>
                     </div>
-                    
-                    
+
+
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    
+
                 <form>
               </div>
 
@@ -211,7 +211,7 @@
 
 
 
-                
+
             </div>
 
         </div>

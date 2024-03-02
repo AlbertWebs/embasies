@@ -685,7 +685,7 @@ ul {
 }
 
 .btn-purple {
-  background: #7c00cf;
+  background: #2b368a;
   color: #fff;
 }
 
@@ -706,7 +706,7 @@ ul {
   font-weight: 500;
 }
 .btn-content-text a {
-  color: #ff396f;
+  color: #2b368a;
 }
 
 /*-------------------------
@@ -752,7 +752,7 @@ ul {
   font-size: 20px;
 }
 .section-title a.sub-delete {
-  color: #ff396f;
+  color: #2b368a;
 }
 .section-title.style-two .title {
   color: #fff;
@@ -1092,7 +1092,7 @@ ul {
 
 .ba-page-name h3 {
   color: #fff;
-  background: #ff396f;
+  background: #2b368a;
   padding: 17px;
   margin-bottom: 0;
 }
@@ -1245,7 +1245,7 @@ ul {
   height: 2px;
   left: 0;
   top: 10px;
-  background: #7c00cf;
+  background: #2b368a;
 }
 .ba-navbar .ba-main-menu ul li a:after {
   content: "";
@@ -1255,10 +1255,10 @@ ul {
   font-family: fontAwesome;
 }
 .ba-navbar .ba-main-menu ul li a:hover {
-  color: #7c00cf;
+  color: #2b368a;
 }
 .ba-navbar .ba-main-menu ul li a:hover:after {
-  color: #7c00cf;
+  color: #2b368a;
 }
 .ba-navbar .ba-main-menu .btn {
   width: 100%;
@@ -1604,13 +1604,13 @@ ul {
   color: #9a3ada;
 }
 .single-goal.single-goal-three:after {
-  background: #ff396f;
+  background: #2b368a;
 }
 .single-goal.single-goal-three .chart-circle-value {
-  color: #ff396f;
+  color: #2b368a;
 }
 .single-goal.single-goal-three .goal-amount {
-  color: #ff396f;
+  color: #2b368a;
 }
 .single-goal.single-goal-four:after {
   background: #2b368a;
@@ -1669,11 +1669,11 @@ ul {
 }
 
 .ba-single-history-two h5 {
-  color: #ff396f;
+  color: #2b368a;
 }
 
 .ba-single-history-three h5 {
-  color: #7c00cf;
+  color: #2b368a;
 }
 
 .ba-single-history-four h5 {
@@ -1728,7 +1728,7 @@ ul {
   right: 20px;
   top: 50%;
   margin-top: -9px;
-  color: #ff396f;
+  color: #2b368a;
   margin-bottom: 0;
 }
 .ba-single-transaction.style-two .amount {
@@ -1762,11 +1762,11 @@ ul {
 }
 .transaction-inner li:nth-child(3).style-two .amount {
   background: #ffcad8;
-  color: #ff396f;
+  color: #2b368a;
 }
 .transaction-inner li:nth-child(4).style-two .amount {
   background: #efd6ff;
-  color: #7c00cf;
+  color: #2b368a;
 }
 .transaction-inner li:last-child {
   margin-bottom: 0;
@@ -2091,7 +2091,7 @@ ul {
   height: 2px;
   left: 0;
   top: 10px;
-  background: #7c00cf;
+  background: #2b368a;
 }
 .ba-all-page-inner ul li a:after {
   content: "";
@@ -2101,10 +2101,10 @@ ul {
   font-family: fontAwesome;
 }
 .ba-all-page-inner ul li a:hover {
-  color: #7c00cf;
+  color: #2b368a;
 }
 .ba-all-page-inner ul li a:hover:after {
-  color: #7c00cf;
+  color: #2b368a;
 }
 .ba-all-page-inner ul li a img {
   margin-right: 10px;
@@ -2142,7 +2142,7 @@ ul {
   font-weight: 400;
 }
 .ba-all-page-inner.style-two h5 {
-  background: #ff396f;
+  background: #2b368a;
 }
 .ba-all-page-inner.style-two ul li a:before {
   content: "";
@@ -2151,7 +2151,7 @@ ul {
   top: 0;
 }
 .ba-all-page-inner.style-three h5 {
-  background: #7c00cf;
+  background: #2b368a;
 }
 .ba-all-page-inner.style-three ul li a:before {
   content: "";

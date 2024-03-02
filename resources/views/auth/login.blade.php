@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="ba-page-name text-center mg-bottom-40">
-        <h3>Login {{ config('app.name', 'Laravel') }}</h3>
+        <h3><img style="max-width:150px;" src="{{asset('mobile/assets/img/logo1.png')}}" alt="logo"></h3>
     </div>
     <!-- page-title end -->
 

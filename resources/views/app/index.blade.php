@@ -71,7 +71,7 @@
                             <a class="header-user" href="#">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    Sign Out<i class="fa fa-power-off"></i>
+                                    <i class="fa fa-power-off"></i>
                                 </a>
 
                              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -239,45 +239,48 @@
                 <h3 class="title">Updates</h3>
                 <a href="#">View All</a>
             </div>
-            <div class="single-goal single-goal-one">
-                <div class="row">
-                    <div class="col-12 pr-0">
-                        <div class="details">
-                            <h6>Finance Business</h6>
-                            <p>This is a sample Business update, here is where all the ipdates will apear in this card and more updates to come,  sample Business update, here is where all the ipdates will apear in this card and more updates</p>
-                        </div>
-                    </div>
-                    {{-- <div class="col-5 pl-0">
-                        <div class="circle-inner circle-inner-one">
-                            <h6 class="goal-amount">$130</h6>
-                            <div class="chart-circle" data-value="0.30">
-                                <canvas width="52" height="52"></canvas>
-                                <div class="chart-circle-value text-center">30%</div>
-                            </div>
-                        </div>
-                    </div> --}}
-                </div>
-            </div>
 
-            <div class="single-goal single-goal-one">
-                <div class="row">
-                    <div class="col-12 pr-0">
-                        <div class="details">
-                            <h6>Finance Business</h6>
-                            <p>This is a sample Business update, here is where all the ipdates will apear in this card and more updates to come,  sample Business update, here is where all the ipdates will apear in this card and more updates</p>
-                        </div>
+        <?php
+            $Updates = DB::table('updates')->where('user_id',Auth::User()->id)->get();
+         ?>
+         @if($Updates->isEmpty())
+         <div class="single-goal single-goal-one">
+            <div class="row">
+                <div class="col-12 pr-0">
+                    <div class="details">
+                        <h6>You have No New Updates</h6>
+                        {{-- <p>{{$updates->content}}</p> --}}
                     </div>
-                    {{-- <div class="col-5 pl-0">
-                        <div class="circle-inner circle-inner-one">
-                            <h6 class="goal-amount">$130</h6>
-                            <div class="chart-circle" data-value="0.30">
-                                <canvas width="52" height="52"></canvas>
-                                <div class="chart-circle-value text-center">30%</div>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
+        </div>
+         @else
+            @foreach ($Updates as $updates)
+                <div class="single-goal single-goal-one">
+                    <div class="row">
+                        <div class="col-9 pr-0">
+                            <div class="details">
+                                <h6>{{$updates->title}}</h6>
+                                <p>{{$updates->content}}</p>
+                            </div>
+                        </div>
+                        <div class="col-3 pl-0">
+                            <div class="circle-inner circle-inner-one">
+                                {{-- <h6 class="goal-amount">$130</h6> --}}
+                                <div class="chart-circle" data-value="1.0">
+                                    <canvas width="52" height="52"></canvas>
+                                    <div class="chart-circle-value text-center">100%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+         @endif
+
+
+
+
 
 
         </div>
@@ -293,46 +296,43 @@
                 <a href="#">View All</a>
             </div>
             <ul class="transaction-inner">
-                <li class="ba-single-transaction">
-                    <div class="thumb">
-                        <img src="{{asset('mobile/assets/img/icon/2.png')}}" alt="img">
-                    </div>
-                    <div class="details">
-                        <h5>Namecheap Inc.</h5>
-                        <p>Domain Purchase</p>
-                        <h5 class="amount">-kes 1350</h5>
-                    </div>
-                </li>
-                <li class="ba-single-transaction">
-                    <div class="thumb">
-                        <img src="{{asset('mobile/assets/img/icon/3.png')}}" alt="img">
-                    </div>
-                    <div class="details">
-                        <h5>Namecheap Inc.</h5>
-                        <p>Domain Purchase</p>
-                        <h5 class="amount">-kes 1350</h5>
-                    </div>
-                </li>
-                <li class="ba-single-transaction">
-                    <div class="thumb">
-                        <img src="{{asset('mobile/assets/img/icon/4.png')}}" alt="img">
-                    </div>
-                    <div class="details">
-                        <h5>Namecheap Inc.</h5>
-                        <p>Domain Purchase</p>
-                        <h5 class="amount">-kes 1350</h5>
-                    </div>
-                </li>
-                <li class="ba-single-transaction">
-                    <div class="thumb">
-                        <img src="{{asset('mobile/assets/img/icon/5.png')}}" alt="img">
-                    </div>
-                    <div class="details">
-                        <h5>Namecheap Inc.</h5>
-                        <p>Domain Purchase</p>
-                        <h5 class="amount">-kes 1350</h5>
-                    </div>
-                </li>
+                <?php
+                   $Transactions = DB::table('transactions')->where('user_id',Auth::User()->id)->get();
+                ?>
+                @if($Transactions->isEmpty())
+                    <li class="ba-single-transaction">
+                        <div class="details">
+                            <div class="row">
+                                <div class="col-12 pr-0">
+                                    <h5>You have not Transacted Yet</h5>
+
+                                </div>
+                        </div>
+                    </li>
+                @else
+                    @foreach ($Transactions as $transaction)
+                    <li class="ba-single-transaction">
+
+                                <div class="details">
+                                    <div class="row">
+                                        <div class="col-9 pr-0">
+                                            <h5>{{$transaction->title}}.</h5>
+                                            <p style="max-width:85%">{{$transaction->narrative}}</p>
+                                        </div>
+                                        <div class="col-3 pr-0">
+                                            @if($transaction->type == "Deposit")
+                                            <h5 class="amount">kes 1350</h5>
+                                            @else
+                                            <h5 class="amount">-kes 1350</h5>
+                                            @endif
+                                        </div>
+                                </div>
+                    </li>
+                    <hr>
+                    @endforeach
+                @endif
+
+
             </ul>
         </div>
     </div>

@@ -40,6 +40,11 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/updates', [AdminController::class, 'updates'])->name('admin.updates');
     Route::get('/admin/users', [AdminController::class, 'users'])->name('admin.users');
     Route::get('/admin/transfers', [AdminController::class, 'transfers'])->name('admin.transfers');
+    Route::get('/admin/transactions', [AdminController::class, 'transactions'])->name('admin.transactions');
+    Route::get('/admin/delateUpdate/{id}', [AdminController::class, 'delateUpdate'])->name('admin.delateUpdate');
+    Route::get('/admin/delateTransaction/{id}', [AdminController::class, 'delateTransaction'])->name('admin.delateTransaction');
+
+
 });
 
 /*------------------------------------------

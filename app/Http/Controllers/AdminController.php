@@ -24,6 +24,8 @@ use App\Term;
 
 use App\Privacy;
 
+use App\Models\Transaction;
+
 use App\Gallery;
 
 use App\Models\Transfer;
@@ -2836,6 +2838,26 @@ public function transfers(){
     $page_name = 'Updates';
     return view('admin.transfers',compact('page_title','Update','page_name'));
 }
+
+public function transactions(){
+    $Transaction = Transaction::all();
+    $page_title = 'list';
+    $page_name = 'Updates';
+    return view('admin.transactions',compact('page_title','Transaction','page_name'));
+}
+
+public function delateUpdate($id){
+//    delete update
+   DB::table('updates')->where('id',$id)->delete();
+   return Redirect::back();
+}
+
+public function delateTransaction($id){
+    //delete update
+    DB::table('transactions')->where('id',$id)->delete();
+    return Redirect::back();
+}
+
 
 
 

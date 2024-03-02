@@ -159,7 +159,7 @@
                 <div class="balance-title text-center">
                     <h6>Welcome Back! {{Auth::User()->name}}</h6>
                 </div>
-                <div class="ba-balance-inner text-center" style="background-image: url('{{asset('mobile/assets/img/bg/2.png')}}');">
+                <div class="ba-balance-inner text-center" style="background-image: url('{{asset('mobile/assets/img/bg/2.png')}}'); ">
                     <div class="row">
                         <?php
                         $Balances = DB::table('balances')->where('user_id',Auth::User()->id)->get();
@@ -171,14 +171,14 @@
                             </div>
 
                             <h5 class="title"> Available</h5>
-                            <h5 class="amount">KES 0.00</h5>
+                            <h5 class="amount" style="font-size:15px !important">KES 0.00</h5>
                         </div>
                         <div class="col-6 pr-0">
                             <div class="icon">
                                 <img src="{{asset('mobile/assets/img/icon/1.png')}}" alt="img">
                             </div>
                             <h5 class="title">Pending </h5>
-                            <h5 class="amount">KES 0.00</h5>
+                            <h5 class="amount" style="font-size:15px !important">KES 0.00</h5>
                         </div>
                     @else
                         @foreach ($Balances as $balance)
@@ -188,14 +188,14 @@
                             </div>
 
                             <h5 class="title"> Available</h5>
-                            <h5 class="amount">KES {{$balance->available}}.00</h5>
+                            <h5 class="amount" style="font-size:15px !important">KES {{$balance->available}}.00</h5>
                         </div>
                         <div class="col-6 pr-0">
                             <div class="icon">
                                 <img src="{{asset('mobile/assets/img/icon/1.png')}}" alt="img">
                             </div>
                             <h5 class="title">Pending </h5>
-                            <h5 class="amount">KES {{$balance->pending}}.00</h5>
+                            <h5 class="amount" style="font-size:15px !important">KES {{$balance->pending}}.00</h5>
                         </div>
                         @endforeach
                     @endif
@@ -206,7 +206,7 @@
     <!-- balance End -->
 
     <!-- add balance start -->
-    <div class="add-balance-area pd-top-40">
+    <div class="add-balance-area pd-top-5">
         <div class="container">
             {{-- <div class="ba-add-balance-title ba-add-balance-btn">
                 <h5>Add Balance</h5>

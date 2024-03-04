@@ -17,6 +17,12 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('homes');
+Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact-us');
+Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');
+Route::get('/careers', [App\Http\Controllers\HomeController::class, 'careers'])->name('careers');
+Route::get('/investors', [App\Http\Controllers\HomeController::class, 'investors'])->name('investors');
+
+
 
 Auth::routes();
 /*------------------------------------------
@@ -44,14 +50,10 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/transactions', [AdminController::class, 'transactions'])->name('admin.transactions');
     Route::get('/admin/delateUpdate/{id}', [AdminController::class, 'delateUpdate'])->name('admin.delateUpdate');
     Route::get('/admin/delateTransaction/{id}', [AdminController::class, 'delateTransaction'])->name('admin.delateTransaction');
-
     Route::get('/admin/addDeposit', [AdminController::class, 'addDeposit'])->name('admin.addDeposit');
     Route::post('/admin/add_Deposit', [AdminController::class, 'add_Deposit'])->name('admin.Deposit');
     Route::get('/admin/deposits', [AdminController::class, 'updates'])->name('admin.Deposit');
     // Route::post('/transfer-funds', [HomeController::class, 'transfer'])->name('Transfer');
-
-
-
 });
 
 /*------------------------------------------

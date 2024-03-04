@@ -32,8 +32,30 @@ class HomeController extends Controller
 
     public function index(): View
     {
-        return view('welcome');
+        return view('front.index');
     }
+
+    public function contact(): View
+    {
+        return view('front.contact');
+    }
+
+    public function faq(): View
+    {
+        return view('front.faq');
+    }
+
+    public function careers(): View
+    {
+        return view('front.careers');
+    }
+
+    public function investors(): View
+    {
+        return view('front.investors');
+    }
+
+
 
     public function home(): View
     {

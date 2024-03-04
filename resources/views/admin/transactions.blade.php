@@ -22,7 +22,7 @@
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2> All Updates </h2>
+                        <h2> All Transactions </h2>
                     </div>
                 </div>
                   <hr />
@@ -42,7 +42,7 @@
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    Updates
+                                    Transactions
                                 </div>
                                 <div class="panel-body">
                                     <div class="table-responsive">

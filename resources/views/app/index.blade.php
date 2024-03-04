@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-4 text-center">
-                    <a href="home.html" class="logo">
+                    <a href="{{url('/')}}/home" class="logo">
                         <img src="{{asset('mobile/assets/img/logo1.png')}}" alt="logo">
                     </a>
                 </div>
@@ -118,15 +118,25 @@
                     </div>
                     <div class="modal-body">
                         <div class="action-sheet-content">
-                            <form action="https://www.s7template.com/tf/bankapp/index.html">
+                            <form method="POST" action="{{route('Transfer')}}">
+                                @csrf
                                 <div class="form-group basic">
                                     <div class="input-wrapper">
                                         <label class="label" for="account1">From</label>
                                         <select class="form-control custom-select" id="account1">
-                                            <option value="0">Investment (*** 7284)</option>
-                                            <option value="1">Savings (*** 5078)</option>
-                                            <option value="2">Deposit (*** 2349)</option>
+                                            <option value="0">My Account (*** 7284)</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="user_id" value="{{Auth::User()->id}}">
+
+                                <div class="form-group basic">
+                                    <label class="label">To</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="input1">Account Number</span>
+                                        </div>
+                                        <input name="account_number" type="text" class="form-control form-control-lg" value="">
                                     </div>
                                 </div>
 
@@ -136,12 +146,12 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text" id="input1">kes</span>
                                         </div>
-                                        <input type="text" class="form-control form-control-lg" value="7680">
+                                        <input name="amount" type="text" class="form-control form-control-lg" value="">
                                     </div>
                                 </div>
 
                                 <div class="form-group basic">
-                                    <button type="button" class="btn-c btn-primary btn-block btn-lg" data-dismiss="modal">Deposit</button>
+                                    <button type="submit" class="btn-c btn-primary btn-block btn-lg" data-dismiss="modal">Transfer</button>
                                 </div>
                             </form>
                         </div>
@@ -204,6 +214,22 @@
         </div>
     </div>
     <!-- balance End -->
+
+    <br>
+    <div class="add-balance-area pd-top-50">
+        <div class="container">
+            <center>
+
+                @if(Session::has('message'))
+                            <div class="alert alert-success">{{ Session::get('message') }}</div>
+                @endif
+
+                @if(Session::has('messageError'))
+                                <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
+                @endif
+                </center>
+        </div>
+    </div>
 
     <!-- add balance start -->
     <div class="add-balance-area pd-top-5">
@@ -307,26 +333,27 @@
                                     <h5>You have not Transacted Yet</h5>
 
                                 </div>
+                            </div>
                         </div>
                     </li>
                 @else
                     @foreach ($Transactions as $transaction)
                     <li class="ba-single-transaction">
-
-                                <div class="details">
-                                    <div class="row">
-                                        <div class="col-9 pr-0">
-                                            <h5>{{$transaction->title}}.</h5>
-                                            <p style="max-width:85%">{{$transaction->narrative}}</p>
-                                        </div>
-                                        <div class="col-3 pr-0">
-                                            @if($transaction->type == "Deposit")
-                                            <h5 class="amount">kes 1350</h5>
-                                            @else
-                                            <h5 class="amount">-kes 1350</h5>
-                                            @endif
-                                        </div>
+                        <div class="details">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5>{{$transaction->title}}.</h5>
+                                    <p style="min-width:300px !important">{{$transaction->narrative}}</p>
                                 </div>
+                                <div class="col-4">
+                                    @if($transaction->type == "Deposit")
+                                      <h5 class="amount text-success">kes {{$transaction->amount}}</h5>
+                                    @else
+                                       <h5 class="amount text-danger">-kes {{$transaction->amount}}</h5>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <hr>
                     @endforeach

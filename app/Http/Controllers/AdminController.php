@@ -2801,13 +2801,39 @@ public function edit_File(Request $request,$id){
 }
 
 
+
+// Add Deposit Method
+public function addDeposit(){
+    $page_title = 'formfiletext';
+    $page_name = 'Add File';
+    return view('admin.addDeposit',compact('page_title','page_name'));
+}
+
+public function add_Deposit(Request $request){
+    $title = $request->title;
+    $type = $request->type;
+    $amount = $request->amount;
+    $narrative = $request->narrative;
+    $user_id = $request->user_id;
+
+    $updateDetails = array(
+         'title' => $title,
+         'type' => $type,
+         'amount' => $amount,
+         'narrative' => $narrative,
+         'user_id' => $user_id,
+     );
+     DB::table('transactions')->insert($updateDetails);
+     Session::flash('message', "Deposit Has been added  ");
+     return Redirect::back();
+ }
+
 // Add Update Method
 public function addUpdate(){
     $page_title = 'formfiletext';
     $page_name = 'Add File';
     return view('admin.addUpdate',compact('page_title','page_name'));
 }
-
 // create post method for add_Update
 public function add_Update(Request $request){
    $title = $request->title;

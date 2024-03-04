@@ -31,7 +31,7 @@
 
 
                 <li><a href="{{url('admin/addUpdate')}}"><i class="icon-plus"></i>  Add Update </a></li>
-
+                <li><a href="{{url('admin/addDeposit')}}"><i class="icon-plus"></i>  Deposit Funds </a></li>
 
                 {{-- <li><a href="{{url('admin/sitesettings')}}"><i class="icon-cog"></i> Site Settings </a></li> --}}
                 <li>

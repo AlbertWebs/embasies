@@ -1697,7 +1697,7 @@ ul {
 
 /********** single-transaction **********/
 .ba-single-transaction {
-  display: flex;
+  /* display: flex; */
   align-self: center;
   border: 1px solid #ececec;
   padding: 20px;
@@ -4802,4 +4802,8 @@ span.badge-pulse-orange {
   background-color: #5cb85c;
   color: #fff;
   border-color: #5cb85c;
+}
+
+.amount{
+    text-decoration: underline;
 }

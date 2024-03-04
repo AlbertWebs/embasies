@@ -90,7 +90,7 @@ class HomeController extends Controller
                 'available' => $newBalance,
                 'pending' => 0,
             );
-            DB::table('balance')->update($updateBalance);
+            DB::table('balances')->update($updateBalance);
             Session::flash('message', "Transaction Successfully Scheduled");
             return Redirect::back();
         }else{

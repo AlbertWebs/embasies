@@ -27,7 +27,6 @@ All Normal Users Routes List
 Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/home', [HomeController::class, 'home'])->name('home');
     Route::post('/transfer-funds', [HomeController::class, 'transfer'])->name('Transfer');
-
 });
 
 /*------------------------------------------
@@ -49,8 +48,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/addDeposit', [AdminController::class, 'addDeposit'])->name('admin.addDeposit');
     Route::post('/admin/add_Deposit', [AdminController::class, 'add_Deposit'])->name('admin.Deposit');
     Route::get('/admin/deposits', [AdminController::class, 'updates'])->name('admin.Deposit');
-
-    Route::post('/transfer-funds', [HomeController::class, 'transfer'])->name('Transfer');
+    // Route::post('/transfer-funds', [HomeController::class, 'transfer'])->name('Transfer');
 
 
 

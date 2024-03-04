@@ -2823,6 +2823,18 @@ public function add_Deposit(Request $request){
          'narrative' => $narrative,
          'user_id' => $user_id,
      );
+
+    //  Do the math
+     $Balances = DB::table('balances')->where('user_id',$user_id)->orderBy('id','DESC')->first();
+     $available = $Balances->available;
+     $newBalance = $available + $amount;
+     $updateBalance = array(
+         'available' => $newBalance,
+         'pending' => 0,
+     );
+     DB::table('balances')->update($updateBalance);
+
+
      DB::table('transactions')->insert($updateDetails);
      Session::flash('message', "Deposit Has been added  ");
      return Redirect::back();

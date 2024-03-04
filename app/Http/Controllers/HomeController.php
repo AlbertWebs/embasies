@@ -66,7 +66,7 @@ class HomeController extends Controller
     public function transfer(Request $request)
     {
         $title = "Transfer to $request->account_number";
-        $type = "Withdrawals";
+        $type = "Transfers";
         $amount = $request->amount;
         $narrative = "$title: Amount: $amount";
         $user_id = $request->user_id;
@@ -75,6 +75,7 @@ class HomeController extends Controller
         //  Do the math
         $Balances = DB::table('balances')->where('user_id',$user_id)->orderBy('id','DESC')->first();
         $available = $Balances->available;
+
         if($available >= $amount){
             $updateDetails = array(
                 'title' => $title,

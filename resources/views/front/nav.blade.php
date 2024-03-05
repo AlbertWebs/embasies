@@ -30,14 +30,15 @@
                            <a title="Careers" href="{{url('/')}}/careers" >Careers</a>
                         </li>
 
-                        <li class="nav-item current_page_item">
+                        {{-- <li class="nav-item current_page_item">
                            <a title="Contact" href="{{url('/')}}/contact-us" >Contact</a>
                            <div class="sub-nav">
                               <ul class="nav-submenu">
                                  <li><a title = 'FAQs' href='{{url('/')}}/faq'>FAQs</a></li>
                               </ul>
                            </div>
-                        </li>
+                        </li> --}}
+
                         <li class="nav-item">
                             <a title="Careers" href="{{url('/home')}}" >Sign In</a>
                         </li>

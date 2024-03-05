@@ -54,13 +54,45 @@ class HomeController extends Controller
     {
         return view('front.investors');
     }
+    public function wireless(): View
+    {
+        return view('front.wireless');
+    }
 
+    public function cassava(): View
+    {
+        return view('front.cassava');
+    }
 
+    public function companies(): View
+    {
+        return view('front.companies');
+    }
+
+    public function values(): View
+    {
+        return view('front.values');
+    }
+    public function strive_masiyiwa(): View
+    {
+        return view('front.strive_masiyiwa');
+    }
+
+    public function sustainability(): View
+    {
+        return view('front.sustainability');
+    }
+
+    public function about(): View
+    {
+        return view('front.about');
+    }
 
     public function home(): View
     {
         return view('app.index');
     }
+
 
 
 

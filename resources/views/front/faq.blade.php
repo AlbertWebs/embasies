@@ -37,7 +37,7 @@
       <header class="inner-header">
          <div class="header-area">
             <div class="lay-width clearfix">
-               <div class="logo"><a href="https://www.econetafrica.com/"><img src="https://www.econetafrica.com/images/logo.png" alt="Econet Wireless Logo" title="Econet Wireless"/></a></div>
+               <div class="logo"><a href="{{url('/')}}"><img src="https://www.econetafrica.com/images/logo.png" alt="Econet Wireless Logo" title="Econet Wireless"/></a></div>
                <div class=" nav-area">
                   @include('front.nav')
                </div>

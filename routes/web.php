@@ -21,8 +21,14 @@ Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'
 Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');
 Route::get('/careers', [App\Http\Controllers\HomeController::class, 'careers'])->name('careers');
 Route::get('/investors', [App\Http\Controllers\HomeController::class, 'investors'])->name('investors');
+Route::get('/about-econet', [App\Http\Controllers\HomeController::class, 'about'])->name('about-econet');
+Route::get('/our-companies', [App\Http\Controllers\HomeController::class, 'companies'])->name('our-companies');
+Route::get('/mission-vision-and-values', [App\Http\Controllers\HomeController::class, 'values'])->name('mission-vision-and-values');
+Route::get('/strive-masiyiwa', [App\Http\Controllers\HomeController::class, 'strive_masiyiwa'])->name('strive-masiyiwa');
+Route::get('/econet-sustainability', [App\Http\Controllers\HomeController::class, 'sustainability'])->name('sustainability');
 
-
+Route::get('/company/econet-wireless', [App\Http\Controllers\HomeController::class, 'wireless'])->name('company-econet-wireless');
+Route::get('/company/cassava-technologies', [App\Http\Controllers\HomeController::class, 'cassava'])->name('cassava');
 
 Auth::routes();
 /*------------------------------------------

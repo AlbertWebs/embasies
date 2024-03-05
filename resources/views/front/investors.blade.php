@@ -5,7 +5,7 @@
       <meta name="Description" content="Econet is a privately held group and is not listed on any stock exchange. One our subsidiaries, Econet Wireless Zimbabwe is listed on the Zimbabwe Stock Exchange."/>
       <meta name="Keywords" content=""/>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <link rel="shortcut icon" type="image/x-icon" href="https://www.econetafrica.com/images/favicon.png')}}">
+      <link rel="shortcut icon" type="image/x-icon" href="https://www.econetafrica.com/images/favicon.png">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://www.econetafrica.com/font-awesome-4.6.1/css/font-awesome.css" rel="stylesheet" type="text/css" />
       <link href="https://www.econetafrica.com/font-awesome-4.6.1/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -37,65 +37,15 @@
       <header class="inner-header">
          <div class="header-area">
             <div class="lay-width clearfix">
-               <div class="logo"><a href="https://www.econetafrica.com/"><img src="https://www.econetafrica.com/images/logo.png" alt="Econet Wireless Logo" title="Econet Wireless"/></a></div>
+               <div class="logo"><a href="{{url('/')}}"><img src="https://www.econetafrica.com/images/logo.png" alt="Econet Wireless Logo" title="Econet Wireless"/></a></div>
                <div class=" nav-area">
-                  <nav class="nav">
-                     <ul class="nav-list">
-                        <li class="nav-item ">
-                           <a title="Home" href="https://www.econetafrica.com/" >Home</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a title="Who we are" href="javascript:void();">Who we are</a>
-                           <div class="sub-nav">
-                              <ul class="nav-submenu">
-                                 <li><a title = 'Company Profile ' href='https://www.econetafrica.com/about-econet'>Company Profile </a></li>
-                                 <li><a title = 'Mission, Vision & Values ' href='https://www.econetafrica.com/mission-vision-and-values'>Mission, Vision & Values </a></li>
-                                 <li><a title = 'Our Chairman' href='https://www.econetafrica.com/strive-masiyiwa'>Our Chairman</a></li>
-                                 <li><a title = 'Econet Sustainability' href='https://www.econetafrica.com/econet-sustainability'>Econet Sustainability</a></li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="nav-item ">
-                           <a title="Our Business" href="https://www.econetafrica.com/our-companies" >Our Business</a>
-                           <div class="sub-nav">
-                              <ul class="nav-submenu">
-                                 <li><a title='Econet Wireless' href='https://econetafrica.com/company/econet-wireless' >Econet Wireless</a></li>
-                                 <li><a title='Cassava Technologies' href='https://econetafrica.com/company/cassava-technologies' >Cassava Technologies</a></li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="nav-item current_page_item">
-                           <a title="Investors" href="https://www.econetafrica.com/investors" >Investors</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a title="Careers" href="https://www.econetafrica.com/careers" >Careers</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a title="News" href="javascript:void();">News</a>
-                           <div class="sub-nav">
-                              <ul class="nav-submenu">
-                                 <li><a title = 'Latest News' href='https://www.econetafrica.com/latest-news'>Latest News</a></li>
-                                 <li><a title = 'Press Release' href='https://www.econetafrica.com/press-release'>Press Release</a></li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="nav-item ">
-                           <a title="Contact" href="https://www.econetafrica.com/contact-us" >Contact</a>
-                           <div class="sub-nav">
-                              <ul class="nav-submenu">
-                                 <li><a title = 'FAQs' href='https://www.econetafrica.com/faq'>FAQs</a></li>
-                              </ul>
-                           </div>
-                        </li>
-                     </ul>
-                     <div class="nav-mobile"></div>
-                  </nav>
+                  @include('front.nav')
                </div>
             </div>
          </div>
       </header>
       <div class="inner-banner-area">
-         <img src="https://www.econetafrica.com/img/page/8684871289347c7f795dd0e19285e5167a44fc4fa.jpg')}}" alt="" title="" />
+         <img src="https://www.econetafrica.com/img/page/8684871289347c7f795dd0e19285e5167a44fc4fa.jpg" alt="" title="" />
          <div class="bdtop"></div>
       </div>
       <div class="heading-breadcrumb-area">

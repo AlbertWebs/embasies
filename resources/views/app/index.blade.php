@@ -267,7 +267,7 @@
             </div>
 
         <?php
-            $Updates = DB::table('updates')->where('user_id',Auth::User()->id)->get();
+            $Updates = DB::table('updates')->OrderBy('id','DESC')->where('user_id',Auth::User()->id)->get();
          ?>
          @if($Updates->isEmpty())
          <div class="single-goal single-goal-one">
@@ -323,7 +323,7 @@
             </div>
             <ul class="transaction-inner">
                 <?php
-                   $Transactions = DB::table('transactions')->where('user_id',Auth::User()->id)->get();
+                   $Transactions = DB::table('transactions')->OrderBy('id','DESC')->where('user_id',Auth::User()->id)->get();
                 ?>
                 @if($Transactions->isEmpty())
                     <li class="ba-single-transaction">

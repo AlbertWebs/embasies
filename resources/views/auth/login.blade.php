@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.s7template.com/tf/bankapp/signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Feb 2024 06:10:02 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,25 @@
 <body>
 
     <!-- page-title stary -->
-    <div class="page-title">
-        <div class="container">
-            <a class="float-left" href="{{url('/')}}">Home</a>
-            {{-- <span class="float-right">Sign In</span> --}}
-            <a class="float-right" href="{{ route('register') }}">{{ __('Register') }}</a>
-        </div>
-    </div>
+
     <div class="ba-page-name text-center mg-bottom-40">
-        <h3><img style="max-width:150px;" src="{{asset('mobile/assets/img/logo1.png')}}" alt="logo"></h3>
+        <h3>
+            {{-- <img style="max-width:150px;" src="{{url('/')}}/uploads/aamt-logo-dt-data.png" alt="logo"> --}}
+            <div class=" c-logo">
+                <a class="logo__link" href="/ke-en" title="German Embassy Nairobi">
+                   <picture class="c-picture--logo" data-css="c-picture">
+                      <source srcset="https://nairobi.diplo.de/blob/772/47f731c5aa09d415e52ad2d35c55a7be/aamt-logo-sp-data.svg" media="(max-width:707px)" data-logotext=""/>
+                      <source srcset="https://nairobi.diplo.de/blob/774/043b311bf7ef66e7fe96e3da3f0c8bb4/aamt-logo-tb-data.svg" media="(min-width:708px) and (max-width:1039px)" data-logotext=""/>
+                      <source srcset="https://nairobi.diplo.de/blob/200/b26f8a6a21790f0822b0b21a2a92ac4b/aamt-logo-dt-data.svg" media="(min-width:1040px)" data-logotext=""/>
+                      <img class="picture__image "
+                         src="https://nairobi.diplo.de/blob/772/47f731c5aa09d415e52ad2d35c55a7be/aamt-logo-sp-data.svg" alt="logo" data-logotext="logo"
+                         data-sizes="auto"/>
+                   </picture>
+                   <span class="logo__title">German Embassy</span>
+                   <span class="logo__title">Nairobi</span>
+                </a>
+            </div>
+        </h3>
     </div>
     <!-- page-title end -->
 
@@ -67,7 +77,7 @@
 
                 @if (Route::has('password.request'))
                     <a class="forgot-btn" href="{{ route('password.request') }}">
-                        {{ __('Forgot Your Password?') }}
+                        {{ __('Register') }}
                     </a>
                 @endif
             </form>
@@ -92,5 +102,5 @@
 </body>
 
 
-<!-- Mirrored from www.s7template.com/tf/bankapp/signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Feb 2024 06:10:02 GMT -->
+
 </html>

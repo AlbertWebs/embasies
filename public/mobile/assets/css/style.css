@@ -1092,7 +1092,7 @@ ul {
 
 .ba-page-name h3 {
   color: #fff;
-  background: #2b368a;
+  background: #e0e2e4;
   padding: 17px;
   margin-bottom: 0;
 }
@@ -4807,3 +4807,47 @@ span.badge-pulse-orange {
 .amount{
     text-decoration: underline;
 }
+.c-logo .logo__title {
+    display: block;
+    color: #000
+}
+/* .c-logo .logo__title {
+    padding-right: 60px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.125;
+    color: #000
+} */
+.c-logo .logo__title {
+    font-size: 15px;
+    font-size: .9375rem;
+    line-height: 1.2
+}
+@media (min-width: 1040px){
+    [dir=ltr] .c-logo .logo__title {
+        padding-left: 56px;
+    }
+}
+
+@media (min-width: 1040px){
+    .c-logo .logo__title {
+        font-size: 15px;
+        font-size: .9375rem;
+        line-height: 1.2;
+    }
+}
+.c-logo .logo__title {
+    display: block;
+    color: #000;
+}
+@media (min-width: 1040px){
+    [dir] .c-logo {
+        padding: 42px 0;
+    }
+}
+
+.c-logo {
+    position: relative;
+}
+
+

@@ -2837,7 +2837,7 @@ public function add_Deposit(Request $request){
      DB::table('transactions')->insert($updateDetails);
      Session::flash('message', "Deposit Has been added  ");
      return Redirect::back();
- }
+}
 
 // Add Update Method
 public function addUpdate(){

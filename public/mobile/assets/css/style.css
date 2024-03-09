@@ -33,7 +33,7 @@ Version: 1.0.0
 ----------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700&amp;display=swap");
 :root {
-  --main-color: #2b368a;
+  --main-color: ##e4dcfc;
   --heading-color: #474747;
   --paragraph-color: #474747;
   --heading-font: "Poppins", sans-serif;
@@ -528,7 +528,7 @@ ul {
   width: 50px;
   height: 50px;
   color: #fff;
-  background-color: #2b368a;
+  background-color: ##e4dcfc;
   text-align: center;
   line-height: 60px;
   border-radius: 50%;
@@ -676,7 +676,7 @@ ul {
 
 .btn-blue {
   color: #fff;
-  background: #2b368a;
+  background: ##e4dcfc;
 }
 
 .btn-red {
@@ -685,7 +685,7 @@ ul {
 }
 
 .btn-purple {
-  background: #2b368a;
+  background: ##e4dcfc;
   color: #fff;
 }
 
@@ -695,7 +695,7 @@ ul {
 }
 
 .readmore-btn {
-  color: #2b368a;
+  color: ##e4dcfc;
   font-weight: 600;
   font-size: 16px;
   transition: 0.4s;
@@ -706,7 +706,7 @@ ul {
   font-weight: 500;
 }
 .btn-content-text a {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 
 /*-------------------------
@@ -746,13 +746,13 @@ ul {
 .section-title a {
   float: right;
   padding-top: 7px;
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .section-title a i {
   font-size: 20px;
 }
 .section-title a.sub-delete {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .section-title.style-two .title {
   color: #fff;
@@ -1044,7 +1044,7 @@ ul {
   width: 20px;
   left: 3px;
   bottom: 3px;
-  background-color: #2b368a;
+  background-color: ##e4dcfc;
   transition: 0.4s;
 }
 .single-switch input:checked + .slider {
@@ -1198,7 +1198,7 @@ ul {
   text-align: center;
   background: #fafafa;
   border-radius: 50%;
-  color: #2b368a;
+  color: ##e4dcfc;
   cursor: pointer;
 }
 .ba-navbar .ba-navbar-user p {
@@ -1245,7 +1245,7 @@ ul {
   height: 2px;
   left: 0;
   top: 10px;
-  background: #2b368a;
+  background: ##e4dcfc;
 }
 .ba-navbar .ba-main-menu ul li a:after {
   content: "";
@@ -1255,10 +1255,10 @@ ul {
   font-family: fontAwesome;
 }
 .ba-navbar .ba-main-menu ul li a:hover {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .ba-navbar .ba-main-menu ul li a:hover:after {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .ba-navbar .ba-main-menu .btn {
   width: 100%;
@@ -1482,7 +1482,7 @@ ul {
   line-height: 48px;
   box-shadow: 0px 0px 29px 0px rgba(104, 62, 254, 0.82);
   border-radius: 50%;
-  background: #2b368a;
+  background: ##e4dcfc;
   margin-bottom: 8px;
 }
 .ba-balance-inner .icon i {
@@ -1503,25 +1503,25 @@ ul {
 	all section style
 ----------------------------------------------------*/
 .ba-add-balance-title {
-  border-left: 2px solid #2b368a;
-  border-right: 2px solid #2b368a;
+  border-left: 2px solid ##e4dcfc;
+  border-right: 2px solid ##e4dcfc;
   background: #fff;
   padding: 18px 20px 17px 20px;
   display: block;
   overflow: hidden;
 }
 .ba-add-balance-title h5 {
-  color: #2b368a;
+  color: ##e4dcfc;
   margin-bottom: 0;
   float: left;
 }
 .ba-add-balance-title i {
-  color: #2b368a;
+  color: ##e4dcfc;
   float: right;
   padding-top: 3px;
 }
 .ba-add-balance-title p {
-  color: #2b368a;
+  color: ##e4dcfc;
   float: right;
   padding-top: 3px;
   font-weight: 600;
@@ -1604,22 +1604,22 @@ ul {
   color: #9a3ada;
 }
 .single-goal.single-goal-three:after {
-  background: #2b368a;
+  background: ##e4dcfc;
 }
 .single-goal.single-goal-three .chart-circle-value {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .single-goal.single-goal-three .goal-amount {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .single-goal.single-goal-four:after {
-  background: #2b368a;
+  background: ##e4dcfc;
 }
 .single-goal.single-goal-four .chart-circle-value {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .single-goal.single-goal-four .goal-amount {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .single-goal .circle-inner {
   display: flex;
@@ -1665,15 +1665,15 @@ ul {
 }
 
 .ba-single-history-one h5 {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 
 .ba-single-history-two h5 {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 
 .ba-single-history-three h5 {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 
 .ba-single-history-four h5 {
@@ -1728,7 +1728,7 @@ ul {
   right: 20px;
   top: 50%;
   margin-top: -9px;
-  color: #2b368a;
+  color: ##e4dcfc;
   margin-bottom: 0;
 }
 .ba-single-transaction.style-two .amount {
@@ -1742,7 +1742,7 @@ ul {
   align-items: center;
   width: 80px;
   border-radius: 5px;
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 
 .transaction-inner {
@@ -1754,7 +1754,7 @@ ul {
 }
 .transaction-inner li:nth-child(1).style-two .amount {
   background: #d5c9ff;
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .transaction-inner li:nth-child(2).style-two .amount {
   background: #c8ffe2;
@@ -1762,11 +1762,11 @@ ul {
 }
 .transaction-inner li:nth-child(3).style-two .amount {
   background: #ffcad8;
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .transaction-inner li:nth-child(4).style-two .amount {
   background: #efd6ff;
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .transaction-inner li:last-child {
   margin-bottom: 0;
@@ -1874,7 +1874,7 @@ ul {
   float: left;
   display: inline-block;
   margin-bottom: 0;
-  color: #2b368a;
+  color: ##e4dcfc;
   margin-top: 6px;
 }
 .ba-bill-pay-inner .amount-inner h5 i {
@@ -1896,7 +1896,7 @@ ul {
 }
 
 .single-blog {
-  border-bottom: 4px solid #2b368a;
+  border-bottom: 4px solid ##e4dcfc;
   margin-bottom: 30px;
   border-radius: 6px;
   overflow: hidden;
@@ -1910,7 +1910,7 @@ ul {
   transition: all 0.3s ease-in;
 }
 .single-blog .details a:hover {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 
 .blog-details-inner {
@@ -2017,7 +2017,7 @@ ul {
   text-align: center;
   background: #f5f5f5;
   border: 1px solid #b9b9b9;
-  color: #2b368a;
+  color: ##e4dcfc;
   display: inline-block;
   width: 100%;
   border-radius: 10px;
@@ -2064,7 +2064,7 @@ ul {
   background: #fff;
 }
 .ba-all-page-inner h5 {
-  background: #2b368a;
+  background: ##e4dcfc;
   padding: 15px 20px;
   color: #fff;
 }
@@ -2091,7 +2091,7 @@ ul {
   height: 2px;
   left: 0;
   top: 10px;
-  background: #2b368a;
+  background: ##e4dcfc;
 }
 .ba-all-page-inner ul li a:after {
   content: "";
@@ -2101,10 +2101,10 @@ ul {
   font-family: fontAwesome;
 }
 .ba-all-page-inner ul li a:hover {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .ba-all-page-inner ul li a:hover:after {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .ba-all-page-inner ul li a img {
   margin-right: 10px;
@@ -2142,7 +2142,7 @@ ul {
   font-weight: 400;
 }
 .ba-all-page-inner.style-two h5 {
-  background: #2b368a;
+  background: ##e4dcfc;
 }
 .ba-all-page-inner.style-two ul li a:before {
   content: "";
@@ -2151,7 +2151,7 @@ ul {
   top: 0;
 }
 .ba-all-page-inner.style-three h5 {
-  background: #2b368a;
+  background: ##e4dcfc;
 }
 .ba-all-page-inner.style-three ul li a:before {
   content: "";
@@ -2220,10 +2220,10 @@ ul {
   transition: 0.4s;
 }
 .footer-bottom ul li a:hover {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 .footer-bottom ul li a:hover p {
-  color: #2b368a;
+  color: ##e4dcfc;
 }
 
 /*

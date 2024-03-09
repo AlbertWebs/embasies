@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Econet - Wallet & Banking</title>
+    <title>Visa and entry - Federal Foreign Office</title>
 
     <!-- Stylesheet File -->
     <link rel="stylesheet" href="{{asset('mobile/assets/css/vendor.css')}}">
@@ -52,26 +52,26 @@
     <!-- auto notification end -->
 
     <!-- header start -->
-    <div class="header-area" style="background-image: url('{{asset('mobile/assets/img/bg/1.png')}}');">
+    <div class="header-area" style="background-color: #e4dcfc">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-3">
-                    <div class="menu-bar">
+                    <div class="menu-bar" style="color:#000000">
                         <i class="fa fa-bars"></i>
                     </div>
                 </div>
                 <div class="col-sm-4 col-4 text-center">
                     <a href="{{url('/')}}/home" class="logo">
-                        <img src="{{asset('mobile/assets/img/logo1.png')}}" alt="logo">
+                        <img style="width:140px" src="{{asset('uploads/logo.png')}}" alt="logo">
                     </a>
                 </div>
                 <div class="col-sm-4 col-5 text-right">
                     <ul class="header-right">
                         <li>
-                            <a class="header-user" href="#">
+                            <a  class="header-user" href="#">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    <i class="fa fa-power-off"></i>
+                                    <i style="color:#000000" class="fa fa-power-off"></i>
                                 </a>
 
                              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -244,7 +244,7 @@
                         <a class="btn btn-blue ba-add-balance-btn" href="#">Withdraw <i class="fa fa-arrow-down"></i></a>
                     </div> --}}
                     <div class="col-12">
-                        <a class="btn btn-green ba-add-balance-btn" href="#">Transfer Funds <i class="fa fa-arrow-right"></i></a>
+                        <a style="background-color:#5d5386" class="btn btn-green ba-add-balance-btn" href="#">Transfer Funds <i class="fa fa-arrow-right"></i></a>
                     </div>
                     {{-- <div class="col-6">
                         <a class="btn btn-purple ba-add-balance-btn" href="#">Cards <i class="fa fa-credit-card-alt "></i></a>
@@ -373,7 +373,7 @@
     <div class="footer-area">
         <div class="footer-top text-center" style="background-image: url('{{url('/mobile/assets/img/bg/7.png')}}');">
             <div class="container">
-                <p>Copyright © Econet 2024. All Rights Reserved. Powered By Econet Africa</p>
+                <p>Copyright © German Embassy Nairobi 2024. All Rights Reserved</p>
             </div>
         </div>
         {{-- <div class="container">

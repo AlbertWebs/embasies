@@ -2821,7 +2821,7 @@ public function add_Deposit(Request $request){
          'type' => $type,
          'amount' => $amount,
          'narrative' => $narrative,
-     );
+    );
 
     //  Do the math
      $Balances = DB::table('balances')->where('user_id',$user_id)->orderBy('id','DESC')->first();

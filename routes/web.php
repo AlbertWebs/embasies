@@ -60,6 +60,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::post('/admin/add_Deposit', [AdminController::class, 'add_Deposit'])->name('admin.Deposit');
     Route::get('/admin/deposits', [AdminController::class, 'updates'])->name('admin.Deposit');
     // Route::post('/transfer-funds', [HomeController::class, 'transfer'])->name('Transfer');
+    Route::get('/admin/deleteUser/{id}', [AdminController::class, 'deleteUser'])->name('admin.deleteUser');
 });
 
 /*------------------------------------------

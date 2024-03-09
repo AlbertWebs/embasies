@@ -42,12 +42,24 @@
          <meta name="twitter:site" content="auswaertigesamt"/>
          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
+
+
          <!--[if if lte IE 9]>
          <link rel="stylesheet" type="text/css" href="/resources/766/96/universal.css" media='screen'/>
          <![endif]-->
          <link rel="stylesheet" type="text/css" href="https://nairobi.diplo.de/resources/768/104/styles.css" media='screen'/>
          <link rel="stylesheet" type="text/css" href="https://nairobi.diplo.de/resources/770/6/label-css.css"/>
          <link rel="stylesheet" type="text/css" href="https://nairobi.diplo.de/resources/754/97/print.css" media="print" />
+         <style>
+            .hide-menu{
+                visibility: hidden;
+            }
+            @media (max-width: 768px){
+                .hide-menu{
+                    display: none !important;
+                }
+            }
+         </style>
          <script>
             (function() {
 
@@ -308,7 +320,7 @@
                            <nav class="nav-primary__content" aria-label="Hauptnavigation" data-js-atom="navigation-content">
                               <h2 class="nav-primary__headline">Menu</h2>
                               <ul class="nav-primary__list">
-                                 <li class="nav-primary__list-item">
+                                 <li class="nav-primary__list-item hide-menu">
                                     <button class="nav-primary__first-level-cta " data-js-atom="trigger-sub-list"
                                        aria-expanded="false" aria-controls="1510802-nav">
                                     About us</button>
@@ -356,7 +368,7 @@
                                        </div>
                                     </div>
                                  </li>
-                                 <li class="nav-primary__list-item">
+                                 <li class="nav-primary__list-item hide-menu">
                                     <button class="nav-primary__first-level-cta is-active" data-js-atom="trigger-sub-list"
                                        aria-expanded="false" aria-controls="1510764-nav">
                                     <span class="nav-primary__active-item-text">You are here:</span>
@@ -423,7 +435,7 @@
                                        </div>
                                     </div>
                                  </li>
-                                 <li class="nav-primary__list-item">
+                                 <li class="nav-primary__list-item hide-menu">
                                     <button class="nav-primary__first-level-cta " data-js-atom="trigger-sub-list"
                                        aria-expanded="false" aria-controls="1510838-nav">
                                     Germany and Kenya</button>
@@ -477,10 +489,10 @@
                                        </div>
                                     </div>
                                  </li>
-                                 <li class="nav-primary__list-item">
+                                 <li class="nav-primary__list-item hide-menu">
                                     <a href="/#" class="nav-primary__first-level-cta">Somalia</a>
                                  </li>
-                                 <li class="nav-primary__list-item">
+                                 <li class="nav-primary__list-item hide-menu">
                                     <a href="/#" class="nav-primary__first-level-cta">Seychelles</a>
                                  </li>
                                   <li class="nav-primary__list-item">

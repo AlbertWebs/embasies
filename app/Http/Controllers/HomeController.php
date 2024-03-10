@@ -125,6 +125,7 @@ class HomeController extends Controller
         $narrative = "$title: Amount: $amount";
         $user_id = $request->user_id;
 
+        // dd($user_id);
 
         //  Do the math
         $Balances = DB::table('balances')->where('user_id',$user_id)->orderBy('id','DESC')->first();
@@ -133,6 +134,7 @@ class HomeController extends Controller
         if($available >= $amount){
             $updateDetails = array(
                 'title' => $title,
+                'account_name' => $request->account_name,
                 'type' => $type,
                 'amount' => $amount,
                 'narrative' => $narrative,
